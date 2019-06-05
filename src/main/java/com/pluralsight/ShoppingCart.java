@@ -22,6 +22,15 @@ public class ShoppingCart {
         cartItems.add(cartItem);
     }
 
+    public void updateCartItem(int index, int quantity){
+        try {
+            CartItem item = cartItems.get(index);
+            item.setQuantity(quantity);
+        }catch (IndexOutOfBoundsException e){
+            e.printStackTrace();
+        }
+    }
+
     public void deleteCartItem(int index) {
         try {
             cartItems.remove(index);
