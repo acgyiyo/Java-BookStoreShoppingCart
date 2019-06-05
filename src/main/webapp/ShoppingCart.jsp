@@ -39,8 +39,8 @@
                         <td><input type="number" name="quantity" min="1" max="50" value="${ cartItem.getQuantity() }" /></td>
                         <td> <fmt:formatNumber value = "${ cartItem.getTotalCost() }" type = "currency"/> </td>
                         <td>
-                            <input type="submit" value="update" />
-                            <input type="submit" value="delete" formaction="/cart/delete"/>
+                            <input type="submit" value="Update" />
+                            <input type="submit" value="Delete" formaction="/cart/delete"/>
                         </td>
                       </form>
                   </tr>
